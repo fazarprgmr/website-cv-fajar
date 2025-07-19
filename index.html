@@ -73,7 +73,7 @@
                     pengembangan web front-end serta desain antarmuka pengguna. Website ini memuat informasi singkat
                     mengenai diri saya.</p>
 
-                <button><i class='bx bx-send'></i> Hubungi Saya</button>
+                <button onclick="window.open('https://wa.me/083815561938', '_blank')"><i class='bx bx-send'></i> Hubungi Saya </button>
 
             </div>
 
@@ -212,19 +212,22 @@
             </div>
 
             <div class="contact-box autoBlur">
-                <p>Silakan hubungi saya jika Anda tertarik bekerja sama, memiliki pertanyaan, atau ingin bertukar pikiran seputar pengembangan web dan teknologi informasi.</p>
+    <form action="https://formspree.io/f/xrblbwdo" method="POST">
+        <p>Silakan hubungi saya jika Anda tertarik bekerja sama, memiliki pertanyaan, atau ingin bertukar pikiran seputar pengembangan web dan teknologi informasi.</p>
 
-                <p>Nama Lengkap</p>
-                <input placeholder="Nama Anda" type="full name">
+        <p>Nama Lengkap</p>
+        <input placeholder="Nama Anda" type="text" name="nama" required>
 
-                <p>Alamat Email</p>
-                <input placeholder="Email Anda" type="Contact">
+        <p>Alamat Email</p>
+        <input placeholder="Email Anda" type="email" name="email" required>
 
-                <p>Pesan</p>
-                <input class="input-message" type="contact" placeholder="Tulis pesan Anda di sini...">
+        <p>Pesan</p>
+        <input class="input-message" type="text" name="pesan" placeholder="Tulis pesan Anda di sini..." required>
 
-                <button>Kirim Pesan <i class='bx bx-mail-send'></i></button>
-            </div>
+        <button type="submit">Kirim Pesan <i class='bx bx-mail-send'></i></button>
+    </form>
+</div>
+
 
         </section>
 
